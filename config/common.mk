@@ -28,6 +28,10 @@ PRODUCT_COPY_FILES += \
     vendor/pearl/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
 endif
 
+# init file
+PRODUCT_COPY_FILES += \
+    vendor/pearl/prebuilt/common/etc/init/pearlos-updates.rc:system/etc/init/pearlos-updates.rc
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/pearl/overlay/common \
