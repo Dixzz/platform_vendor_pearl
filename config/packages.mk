@@ -121,5 +121,5 @@ PRODUCT_COPY_FILES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    PixelTheme
-
+    PixelTheme \
+    SluttyPinkTheme
