@@ -122,4 +122,5 @@ PRODUCT_COPY_FILES += \
 # Themes
 PRODUCT_PACKAGES += \
     PixelTheme \
-    SluttyPinkTheme
+    SluttyPinkTheme \
+    DarknessMeister
