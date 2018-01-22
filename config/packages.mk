@@ -124,4 +124,6 @@ PRODUCT_PACKAGES += \
     PixelTheme \
     SluttyPinkTheme \
     DarknessMeisterTheme \
-    SmokedGreenTheme
+    SmokedGreenTheme \
+    Bl4ckAndYell0Theme
+
