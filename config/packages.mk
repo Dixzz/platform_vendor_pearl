@@ -128,5 +128,6 @@ PRODUCT_PACKAGES += \
     Bl4ckAndYell0Theme \
     OmniTheme \
     FromHellTheme \
-    GboardOmniTheme
+    GboardOmniTheme \
+    ZeroZeroTheme
 
