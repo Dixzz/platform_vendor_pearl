@@ -120,15 +120,15 @@ PRODUCT_COPY_FILES += \
     vendor/pearl/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
 
 # Themes
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     GboardOmniTheme
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     NotificationsDark \
     NotificationsLight \
     NotificationsPrimary
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     AccentSluttyPink \
     AccentPixel \
     AccentGoldenShower \
@@ -143,7 +143,7 @@ PRODUCT_PACKAGES += \
     AccentRottenOrange \
     AccentDeepPurple
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     PrimaryAlmostBlack \
     PrimaryBlack \
     PrimaryOmni \
