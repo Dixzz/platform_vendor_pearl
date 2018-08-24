@@ -123,12 +123,12 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PACKAGES += \
     GboardOmniTheme
 
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     NotificationsDark \
     NotificationsLight \
     NotificationsPrimary
 
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     AccentSluttyPink \
     AccentPixel \
     AccentGoldenShower \
@@ -143,7 +143,7 @@ PRODUCT_COPY_FILES += \
     AccentRottenOrange \
     AccentDeepPurple
 
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     PrimaryAlmostBlack \
     PrimaryBlack \
     PrimaryOmni \
