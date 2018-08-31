@@ -124,6 +124,9 @@ PRODUCT_COPY_FILES += \
     GboardOmniTheme
 
 PRODUCT_PACKAGES += \
+    DocumentsUITheme
+
+PRODUCT_PACKAGES += \
     NotificationsDark \
     NotificationsLight \
     NotificationsPrimary
