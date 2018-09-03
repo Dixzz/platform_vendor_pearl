@@ -124,7 +124,9 @@ PRODUCT_COPY_FILES += \
     GboardOmniTheme
 
 PRODUCT_PACKAGES += \
-    DocumentsUITheme
+    DocumentsUITheme \
+    DialerTheme \
+    TelecommTheme
 
 PRODUCT_PACKAGES += \
     NotificationsDark \
