@@ -150,7 +150,8 @@ PRODUCT_PACKAGES += \
     AccentSmokingGreen \
     AccentDeadRed \
     AccentRottenOrange \
-    AccentDeepPurple
+    AccentDeepPurple \
+    AccentMisticBrown
 
 PRODUCT_PACKAGES += \
     PrimaryAlmostBlack \
