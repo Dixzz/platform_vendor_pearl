@@ -44,6 +44,13 @@ PRODUCT_PACKAGES += \
     messaging \
     Stk
 
+# QS tile styles
+PRODUCT_PACKAGES += \
+    QStileCircleTrim \
+    QStileDefault \
+    QStileDualToneCircle \
+    QStileSquircleTrim
+
 # Omni Poor Man Themes
 PRODUCT_PACKAGES += \
     DocumentsUITheme \
