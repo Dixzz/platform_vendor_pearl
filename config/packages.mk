@@ -45,6 +45,69 @@ PRODUCT_PACKAGES += \
     Stk \
     WeatherClient
 
+# QS tile styles
+PRODUCT_PACKAGES += \
+    QStileCircleTrim \
+    QStileDefault \
+    QStileDualToneCircle \
+    QStileSquircleTrim
+
+# Omni Poor Man Themes
+PRODUCT_PACKAGES += \
+    DocumentsUITheme \
+    DialerTheme \
+    TelecommTheme
+
+PRODUCT_PACKAGES += \
+    NotificationsBlack \
+    NotificationsDark \
+    NotificationsLight \
+    NotificationsPrimary
+
+PRODUCT_PACKAGES += \
+    AccentSluttyPink \
+    AccentPixel \
+    AccentGoldenShower \
+    AccentDeepOrange \
+    AccentMisticBrown \
+    AccentOmni \
+    AccentWhite \
+    AccentTeal \
+    AccentFromHell \
+    AccentBlueMonday \
+    AccentSmokingGreen \
+    AccentDeadRed \
+    AccentRottenOrange \
+    AccentDeepPurple \
+    AccentBlackMagic \
+    AccentCandyRed \
+    AccentJadeGreen \
+    AccentPaleBlue \
+    AccentPaleRed \
+    AccentObfusBleu \
+    AccentNotImpPurple \
+    AccentHolillusion \
+    AccentMoveMint \
+    AccentFootprintPurple \
+    AccentBubblegumPink \
+    AccentFrenchBleu \
+    AccentManiaAmber \
+    AccentSeasideMint \
+    AccentDreamyPurple \
+    AccentSpookedPurple \
+    AccentHeirloomBleu \
+    AccentTruFilPink \
+    AccentWarmthOrange \
+    AccentColdBleu \
+    AccentDiffDayGreen \
+    AccentDuskPurple \
+    AccentBurningRed \
+    AccentHazedPink \
+    AccentColdYellow \
+    AccentNewHouseOrange \
+    AccentIllusionsPurple \
+    AccentNetFlix
+
 #Themes
 PRODUCT_PACKAGES += \
     BlackThemeAndroidOverlay \
