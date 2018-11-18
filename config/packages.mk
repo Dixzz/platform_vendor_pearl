@@ -126,7 +126,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DocumentsUITheme \
     DialerTheme \
-    TelecommTheme
+    TelecommTheme \
+    PhonographTheme
 
 PRODUCT_PACKAGES += \
     NotificationsDark \
