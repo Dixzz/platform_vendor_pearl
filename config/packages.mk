@@ -47,7 +47,9 @@ PRODUCT_PACKAGES += \
 #Themes
 PRODUCT_PACKAGES += \
     BlackThemeAndroidOverlay \
-    BlackThemeSettingsOverlay
+    BlackThemeSettingsOverlay \
+    DarkThemeAndroidOverlay \
+    DarkThemeSettingsOverlay
 
 # Turbo
 PRODUCT_PACKAGES += \
