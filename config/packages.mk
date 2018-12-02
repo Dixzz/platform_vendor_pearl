@@ -151,7 +151,35 @@ PRODUCT_PACKAGES += \
     AccentDeadRed \
     AccentRottenOrange \
     AccentDeepPurple \
-    AccentMisticBrown
+    AccentMisticBrown \
+    AccentBlackMagic \
+    AccentCandyRed \
+    AccentJadeGreen \
+    AccentPaleBlue \
+    AccentPaleRed \
+    AccentObfusBleu \
+    AccentNotImpPurple \
+    AccentHolillusion \
+    AccentMoveMint \
+    AccentFootprintPurple \
+    AccentBubblegumPink \
+    AccentFrenchBleu \
+    AccentManiaAmber \
+    AccentSeasideMint \
+    AccentDreamyPurple \
+    AccentSpookedPurple \
+    AccentHeirloomBleu \
+    AccentTruFilPink \
+    AccentWarmthOrange \
+    AccentColdBleu \
+    AccentDiffDayGreen \
+    AccentDuskPurple \
+    AccentBurningRed \
+    AccentHazedPink \
+    AccentColdYellow \
+    AccentNewHouseOrange \
+    AccentIllusionsPurple
+
 
 PRODUCT_PACKAGES += \
     PrimaryAlmostBlack \
