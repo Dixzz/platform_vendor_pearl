@@ -124,6 +124,7 @@ PRODUCT_COPY_FILES += \
     GboardOmniTheme
 
 PRODUCT_PACKAGES += \
+    ContactsTheme \
     DocumentsUITheme \
     DialerTheme \
     TelecommTheme \
