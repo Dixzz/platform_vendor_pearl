@@ -209,3 +209,7 @@ PRODUCT_COPY_FILES +=  \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     org.pixelexperience.weather.revision=2
+
+#Font package
+PRODUCT_PACKAGES += \
+    Custom-Fonts
