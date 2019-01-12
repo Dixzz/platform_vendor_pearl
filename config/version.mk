@@ -39,14 +39,16 @@ ifeq ($(PEARL_OFFICIAL),true)
    endif
 endif
 
-PEARL_VERSION := PearlOS-$(PEARL_MOD_VERSION)-$(CURRENT_DEVICE)-$(PEARL_BUILD_TYPE)-$(shell date -u +%Y%m%d)
+PEARL_BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
+PEARL_BUILD_VERSION := Pearl-$(PEARL_MOD_VERSION)-$(CURRENT_DEVICE)-$(PEARL_BUILD_TYPE)
+PEARL_VERSION := Pearl-$(PEARL_MOD_VERSION)-$(CURRENT_DEVICE)-$(PEARL_BUILD_TYPE)-$(PEARL_BUILD_DATE)
+ROM_FINGERPRINT := Pearl/$(PEARL_MOD_VERSION)/$(CURRENT_DEVICE)/$(PEARL_BUILD_DATE)
+PEARL_DISPLAY_VERSION := Pearl-$(PEARL_MOD_VERSION)-$(CURRENT_DEVICE)-$(PEARL_BUILD_TYPE)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-  ro.pearl.version=$(PEARL_VERSION) \
-  ro.pearl.releasetype=$(PEARL_BUILD_TYPE) \
-  ro.mod.version=$(PEARL_MOD_VERSION)
-
-PEARL_DISPLAY_VERSION := PearlOS-$(PEARL_MOD_VERSION)-$(PEARL_BUILD_TYPE)
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-  ro.pearl.display.version=$(PEARL_DISPLAY_VERSION)
+    ro.pearl.build.version=$(PEARL_BUILD_VERSION) \
+    ro.pearl.version=$(PEARL_VERSION) \
+    ro.pearl.releasetype=$(PEARL_BUILD_TYPE) \
+    ro.mod.version=$(PEARL_MOD_VERSION) \
+    ro.pearl.display.version=$(PEARL_DISPLAY_VERSION) \
+    ro.pearl.fingerprint=$(ROM_FINGERPRINT)

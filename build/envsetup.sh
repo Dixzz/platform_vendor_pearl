@@ -52,7 +52,19 @@ function mk_time()
     return $ret
 }
 
-function brunch()
+function  zerotwo()
+{
+    breakfast $*
+    if [ $? -eq 0 ]; then
+        mka bacon
+    else
+        echo "No such item in brunch menu. Try 'breakfast'"
+        return 1
+    fi
+    return $?
+}
+
+function  brunch()
 {
     breakfast $*
     if [ $? -eq 0 ]; then
@@ -143,6 +155,7 @@ EOF
 function omnom()
 {
     brunch $*
+    zerotwo $*
     eat
 }
 
