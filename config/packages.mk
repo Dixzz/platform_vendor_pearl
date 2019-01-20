@@ -22,7 +22,10 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     messaging \
     WellbeingPrebuilt \
-    WallpaperPickerGoogle
+    WallpaperPickerGoogle \
+    Snap \
+    shell \
+    OmniStyle
 
 #ifeq ($(AOSIP_BUILDTYPE), Official)
 #    PRODUCT_PACKAGES += \
