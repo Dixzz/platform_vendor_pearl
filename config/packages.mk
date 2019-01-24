@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
     WallpaperPickerGoogle \
     Snap \
     shell \
+    AboutUs \
     OmniStyle
 
 #ifeq ($(AOSIP_BUILDTYPE), Official)

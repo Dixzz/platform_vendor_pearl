@@ -54,6 +54,9 @@ function mk_time()
 
 function  zerotwo()
 {
+    T=$(gettop)
+    python $T/vendor/pearl/prebuilt/common/priv-app/getApp.py $@
+
     breakfast $*
     if [ $? -eq 0 ]; then
         mka bacon
@@ -66,6 +69,9 @@ function  zerotwo()
 
 function  brunch()
 {
+    T=$(gettop)
+    python $T/vendor/pearl/prebuilt/common/priv-app/getApp.py $@
+
     breakfast $*
     if [ $? -eq 0 ]; then
         mka bacon
