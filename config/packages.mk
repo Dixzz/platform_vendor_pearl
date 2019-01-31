@@ -106,7 +106,8 @@ PRODUCT_PACKAGES += \
     PrimaryWhite \
     PrimaryColdWhite \
     PrimaryWarmWhite \
-    PrimaryDarkBlue
+    PrimaryDarkBlue \
+    PrimaryChocolate
 
 # Turbo
 PRODUCT_PACKAGES += \
