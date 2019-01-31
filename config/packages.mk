@@ -97,7 +97,8 @@ PRODUCT_PACKAGES += \
     AccentHazedPink \
     AccentColdYellow \
     AccentNewHouseOrange \
-    AccentIllusionsPurple
+    AccentIllusionsPurple \
+    AccentNetFlix
 
 PRODUCT_PACKAGES += \
     PrimaryAlmostBlack \
