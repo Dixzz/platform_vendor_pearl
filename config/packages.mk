@@ -41,7 +41,13 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LatinIME \
     messaging \
-    Stk
+    Stk \
+    WeatherClient
+
+#Themes
+PRODUCT_PACKAGES += \
+    BlackThemeAndroidOverlay \
+    BlackThemeSettingsOverlay
 
 # Turbo
 PRODUCT_PACKAGES += \
@@ -124,7 +130,7 @@ PRODUCT_COPY_FILES += \
     vendor/pearl/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
 
 # Themes
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     GboardOmniTheme
 
 PRODUCT_PACKAGES += \
@@ -196,3 +202,10 @@ PRODUCT_PACKAGES += \
     PrimaryViolator \
     PrimaryTealMeal
 
+# Weather
+PRODUCT_COPY_FILES +=  \
+    vendor/pearl/prebuilt/common/etc/sysconfig/org.pixelexperience.weather.client.xml:system/etc/sysconfig/org.pixelexperience.weather.client.xml \
+    vendor/pearl/prebuilt/common/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    org.pixelexperience.weather.revision=2
