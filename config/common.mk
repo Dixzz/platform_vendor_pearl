@@ -33,19 +33,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     vendor/pearl/overlay/common \
     vendor/pearl/overlay/themes
 
-# QS tile styles
-PRODUCT_PACKAGES += \
-    QStileCircleTrim \
-    QStileDefault \
-    QStileDualToneCircle \
-    QStileSquircleTrim
-
-# Omni Poor Man Themes
-PRODUCT_PACKAGES += \
-    DocumentsUITheme \
-    DialerTheme \
-    TelecommTheme
-
 # Bootanimation
 $(call inherit-product, vendor/pearl/config/bootanimation.mk)
 

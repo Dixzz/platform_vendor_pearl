@@ -26,7 +26,8 @@ PRODUCT_PACKAGES += \
     Snap \
     shell \
     AboutUs \
-    OmniStyle
+    OmniStyle \
+    WeatherClient
 
 #ifeq ($(AOSIP_BUILDTYPE), Official)
 #    PRODUCT_PACKAGES += \
@@ -196,3 +197,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/pearl/prebuilt/common/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
     vendor/pearl/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
+
+# Weather
+PRODUCT_COPY_FILES += \
+    vendor/pearl/prebuilt/common/etc/sysconfig/org.pixelexperience.weather.client.xml:system/etc/sysconfig/org.pixelexperience.weather.client.xml 
+\
+    vendor/pearl/prebuilt/common/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml
+ PRODUCT_PROPERTY_OVERRIDES += \
+    org.pixelexperience.weather.revision=2
+
