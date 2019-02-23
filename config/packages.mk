@@ -23,8 +23,8 @@ PRODUCT_PACKAGES += \
     messaging \
     WellbeingPrebuilt \
     WallpaperPickerGoogle \
-    Snap \
-    shell \
+    Camera2 \
+    ShellExtras \
     AboutUs \
     OmniStyle
 

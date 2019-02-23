@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PEARL_MOD_VERSION = 9.0
+PEARL_MOD_VERSION = 1.0
 
 ifndef PEARL_BUILD_TYPE
     PEARL_BUILD_TYPE := UNOFFICIAL
@@ -26,6 +26,13 @@ ifeq ($(PEARL_ALPHA),true)
     PEARL_BUILD_TYPE := ALPHA
 endif
 
+ifndef PEARL_MAINTAINER
+    PEARL_MAINTAINER := None
+endif
+
+ifndef CPU_MODEL
+    CPU_MODEL := random_625
+endif
 CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
 
 ifeq ($(PEARL_OFFICIAL),true)
@@ -43,7 +50,7 @@ PEARL_BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
 PEARL_BUILD_VERSION := Pearl-$(PEARL_MOD_VERSION)-$(CURRENT_DEVICE)-$(PEARL_BUILD_TYPE)
 PEARL_VERSION := Pearl-$(PEARL_MOD_VERSION)-$(CURRENT_DEVICE)-$(PEARL_BUILD_TYPE)-$(PEARL_BUILD_DATE)
 ROM_FINGERPRINT := Pearl/$(PEARL_MOD_VERSION)/$(CURRENT_DEVICE)/$(PEARL_BUILD_DATE)
-PEARL_DISPLAY_VERSION := Pearl-$(PEARL_MOD_VERSION)-$(CURRENT_DEVICE)-$(PEARL_BUILD_TYPE)
+PEARL_DISPLAY_VERSION := v$(PEARL_MOD_VERSION)-$(PEARL_BUILD_TYPE)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.pearl.build.version=$(PEARL_BUILD_VERSION) \
@@ -51,4 +58,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.pearl.releasetype=$(PEARL_BUILD_TYPE) \
     ro.mod.version=$(PEARL_MOD_VERSION) \
     ro.pearl.display.version=$(PEARL_DISPLAY_VERSION) \
-    ro.pearl.fingerprint=$(ROM_FINGERPRINT)
+    ro.pearl.fingerprint=$(ROM_FINGERPRINT) \
+    ro.pearl.maintainer = $(PEARL_MAINTAINER) \
+    ro.processor.model=$(CPU_MODEL)
