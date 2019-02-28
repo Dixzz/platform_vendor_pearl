@@ -17,7 +17,6 @@ PRODUCT_PACKAGES += \
     Gallery2 \
     LatinIME \
     Launcher3 \
-    LeanLauncher \
     LiveWallpapers \
     LiveWallpapersPicker \
     messaging \
@@ -27,7 +26,8 @@ PRODUCT_PACKAGES += \
     shell \
     AboutUs \
     OmniStyle \
-    WeatherClient
+    WeatherClient \
+    OmniRecord \
 
 #ifeq ($(AOSIP_BUILDTYPE), Official)
 #    PRODUCT_PACKAGES += \

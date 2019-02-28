@@ -7,10 +7,10 @@
     <color name="omni_text2">#ffdddddd</color>  <!-- text secondary -->
     <color name="omni_text3">#ffffffff</color>  <!-- text tertiary -->
     <color name="omni_text4">#de252525</color>  <!-- text toast -->
-    <color name="omni_color1">#ff000000</color> <!-- PRIMARY DARK -->
-    <color name="omni_color2">@*android:color/black</color> <!-- PRIMARY LIGHT -->
-    <color name="omni_color6">@*android:color/black</color> <!-- WIFI ICON IN DETAILS -->
-    <color name="omni_color7">#00000000</color> <!-- FLOATING DIALOG COLOR ON VERY DARK THEMES MAKE THIS A BIT LIGHTER -->
+    <color name="omni_color1">#ff322B27</color> <!-- PRIMARY DARK -->
+    <color name="omni_color2">#ff322B27</color> <!-- PRIMARY LIGHT -->
+    <color name="omni_color6">#b3050505</color> <!-- WIFI ICON IN DETAILS -->
+    <color name="omni_color7">#ff322B27</color> <!-- FLOATING DIALOG COLOR ON VERY DARK THEMES MAKE THIS A BIT LIGHTER -->
     <color name="omni_color9">@*android:color/accent_device_default_light</color> <!-- TOAST (NEEDS SOME ALPHA) -->
 
     <!-- PRIMARY LIGHT -->
