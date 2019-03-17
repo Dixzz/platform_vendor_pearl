@@ -18,14 +18,6 @@ ifndef PEARL_BUILD_TYPE
     PEARL_BUILD_TYPE := UNOFFICIAL
 endif
 
-ifeq ($(PEARL_BETA),true)
-    PEARL_BUILD_TYPE := BETA
-endif
-
-ifeq ($(PEARL_ALPHA),true)
-    PEARL_BUILD_TYPE := ALPHA
-endif
-
 ifndef PEARL_MAINTAINER
     PEARL_MAINTAINER := None
 endif
@@ -34,6 +26,12 @@ ifndef CPU_MODEL
     CPU_MODEL := Unknown
 endif
 CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
+
+# Only include OTA for official builds
+ifeq ($(filter-out OFFICAL,$(PEARL_BUILD_TYPE)),)
+    PRODUCT_PACKAGES += \
+        PearlOTA
+endif
 
 ifeq ($(PEARL_OFFICIAL),true)
    LIST = $(shell curl -s https://raw.githubusercontent.com/PearlOS/vendor_pearl/pie/pearl.devices)
