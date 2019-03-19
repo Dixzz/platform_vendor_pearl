@@ -20,13 +20,14 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     LiveWallpapers \
     LiveWallpapersPicker \
-    messaging \
+    Messaging \
     WellbeingPrebuilt \
     WallpaperPickerGoogle \
     Camera2 \
     ShellExtras \
     AboutUs \
-    OmniStyle
+    OmniStyle \
+    WeatherClient
 
 #ifeq ($(AOSIP_BUILDTYPE), Official)
 #    PRODUCT_PACKAGES += \
