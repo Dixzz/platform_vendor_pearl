@@ -137,6 +137,8 @@ PRODUCT_COPY_FILES += \
 	vendor/pearl/sounds/ringtones/Zen.ogg:system/media/audio/ringtones/Zen.ogg \
 	vendor/pearl/sounds/ringtones/Zen_too.ogg:system/media/audio/ringtones/Zen_too.ogg
 
+#Default Ringtone/Notification/Alarm Sound
 PRODUCT_PROPERTY_OVERRIDES += \
-   ro.config.ringtone=Zen_too.ogg \
-   ro.config.notification_sound=Chime.ogg
+   ro.config.ringtone=Zen_too.ogg,Hotline.ogg \
+   ro.config.notification_sound=Chime.ogg \
+   ro.config.alarm_alert=Bright_morning.ogg
