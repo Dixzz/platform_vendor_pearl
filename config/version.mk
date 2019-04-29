@@ -29,7 +29,7 @@ endif
 CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
 
 # Only include OTA for official builds
-ifeq ($(filter-out OFFICAL,$(PEARL_BUILD_TYPE)),)
+ifeq ($(filter-out OFFICIAL,$(PEARL_BUILD_TYPE)),)
     PRODUCT_PACKAGES += \
         PearlOTA
 endif
