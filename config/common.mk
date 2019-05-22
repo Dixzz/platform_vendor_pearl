@@ -63,5 +63,7 @@ include vendor/pearl/config/pearl_props.mk
 # Sounds
 include vendor/pearl/config/sounds.mk
 
+BUILD_RRO_SYSTEM_PACKAGE := $(TOPDIR)vendor/pearl/build/core/system_rro.mk
+
 #Telephony
 include vendor/pearl/config/telephony.mk
