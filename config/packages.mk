@@ -27,8 +27,8 @@ PRODUCT_PACKAGES += \
     ShellExtras \
     AboutUs \
     OmniStyle \
-    WeatherClient
-
+    WeatherClient \
+    SettingsIntelligence
 #ifeq ($(AOSIP_BUILDTYPE), Official)
 #    PRODUCT_PACKAGES += \
 #        Updater

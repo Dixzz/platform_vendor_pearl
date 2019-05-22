@@ -33,7 +33,7 @@ PRODUCT_COPY_FILES += \
     vendor/pearl/prebuilt/common/etc/init/pearlos-updates.rc:system/etc/init/pearlos-updates.rc
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
+PRODUCT_PACKAGE_OVERLAYS += \
     vendor/pearl/overlay/common \
     vendor/pearl/overlay/themes
 
