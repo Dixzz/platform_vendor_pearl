@@ -106,7 +106,9 @@ PRODUCT_PACKAGES += \
     AccentColdYellow \
     AccentNewHouseOrange \
     AccentIllusionsPurple \
-    AccentNetFlix
+    AccentNetFlix \
+    AccentSweetQPurple \
+    AccentQGreen
 
 #Themes
 PRODUCT_PACKAGES += \
