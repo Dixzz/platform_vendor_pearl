@@ -1,4 +1,4 @@
-#Pearl Official Devices Bring in
-for x in $(cat vendor/pearl/pearl.devices); do
-    add_lunch_combo pearl_$x-userdebug;
+for combo in $(curl -s https://raw.githubusercontent.com/pearlos-staging/platform_vendor_pearl/pie/pearl.devices | sed -e 's/#.*$//' | awk '{printf "pearl_%s-%s\n", $1, $2}')
+do
+    add_lunch_combo $combo
 done

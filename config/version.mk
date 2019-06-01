@@ -28,21 +28,22 @@ endif
 
 CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
 
-# Only include OTA for official builds
-ifeq ($(filter-out OFFICIAL,$(PEARL_BUILD_TYPE)),)
-    PRODUCT_PACKAGES += \
-        PearlOTA
-endif
-
-ifeq ($(PEARL_OFFICIAL),true)
-   LIST = $(shell curl -s https://raw.githubusercontent.com/PearlOS/vendor_pearl/pie/pearl.devices)
-   FOUND_DEVICE = $(filter $(CURRENT_DEVICE), $(LIST))
+# Official Devices
+ifeq ($(PEARL_OFFICIAL), true)
+   LIST = $(shell curl -s https://raw.githubusercontent.com/pearlos-staging/platform_vendor_pearl/pie/pearl.devices)
+   FOUND_DEVICE =  $(filter $(CURRENT_DEVICE), $(LIST))
     ifeq ($(FOUND_DEVICE),$(CURRENT_DEVICE))
       IS_OFFICIAL=true
       PEARL_BUILD_TYPE := OFFICIAL
-   else
-      PEARL_BUILD_TYPE := UNOFFICIAL
-   endif
+
+PRODUCT_PACKAGES += \
+    PearlOTA
+
+    endif
+    ifneq ($(IS_OFFICIAL), true)
+       PEARL_BUILD_TYPE := UNOFFICIAL
+       $(error Device is not official "$(FOUND)")
+    endif
 endif
 
 PEARL_BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
