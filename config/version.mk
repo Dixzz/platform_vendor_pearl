@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PEARL_MOD_VERSION = 2.0
+PEARL_MOD_VERSION = 2.1
 
 ifndef PEARL_BUILD_TYPE
     PEARL_BUILD_TYPE := UNOFFICIAL
